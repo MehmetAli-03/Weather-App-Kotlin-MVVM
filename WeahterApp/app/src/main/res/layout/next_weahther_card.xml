@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="230dp"
+    android:layout_marginEnd="12dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="14dp"
+    >
+
+    <!-- Gün -->
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        tools:text="Pazartesi"/>
+
+    <!-- Icon -->
+    <ImageView
+        android:id="@+id/imgWeather"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/sunny"
+        android:contentDescription="@null"/>
+
+    <!-- Max / Min -->
+    <TextView
+        android:id="@+id/tvMaxMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="16sp"
+        tools:text="4° / -1°"/>
+
+    <!-- Nem -->
+    <TextView
+        android:id="@+id/tvHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textSize="12sp"
+        android:textColor="#EEFFFFFF"
+        tools:text="Nem %32"/>
+
+</LinearLayout>
